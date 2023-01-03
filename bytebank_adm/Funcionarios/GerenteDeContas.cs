@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bytebank_adm.SistemaInterno;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_adm.Funcionarios
 {
-    public class GerenteDeContas : Funcionario
+    public class GerenteDeContas : FuncionarioAutenticavel
     {
         public override double GetBonificacao()
         {
