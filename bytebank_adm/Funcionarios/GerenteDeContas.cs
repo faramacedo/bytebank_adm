@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Transactions;
 
-namespace bytebank_adm.Funcionarios 
+namespace bytebank_adm.Funcionarios
 {
-    public class Diretor : Funcionario 
+    public class GerenteDeContas : Funcionario
     {
         public override double GetBonificacao()
         {
-            return this.Salario * 0.5;
+            return this.Salario * 0.25;
         }
-        public Diretor(string cpf):base(cpf,5000)
+        public GerenteDeContas(string cpf) : base(cpf, 4000)
         {
             //Console.WriteLine("Criando um diretor.");
         }
         public override void AumentarSalario()
         {
-            this.Salario *= 1.15;
+            this.Salario *= 1.05;
         }
     }
 }
